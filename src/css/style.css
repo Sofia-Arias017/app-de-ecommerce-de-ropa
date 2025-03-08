@@ -1,0 +1,12 @@
+@import url(variables.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../storage/img/portada.gif);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
