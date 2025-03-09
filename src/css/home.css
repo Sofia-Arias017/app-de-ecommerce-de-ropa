@@ -1,0 +1,129 @@
+@import url(variables.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-4);
+}
+
+/**************** header ******************/
+header {
+    /* background-color: red; */
+    padding: 28px 19px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__titulo {
+    /* background-color: olivedrab; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__titulo h1 {
+    /* background-color: violet; */
+    font-family: "EncodeSans-Bold";
+    font-size: 18px;
+    color: var(--color-5);
+    font-weight: normal;
+}
+
+.user-info h3 {
+    /* background-color: blueviolet; */
+    font-family: "EncodeSans-Regular";
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--color-2);
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    object-position: 40% 25%;
+    border-radius: 50%;
+    border-color: var(--color-5);
+    border: none;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+/******************************************/
+ /**************** nav ******************/
+.nav__busqueda {
+    /* background: red; */
+    padding: -20px 19px 0px;
+}
+
+.form__busqueda {
+    /* background: blue; */
+    padding: 19px 19px 40px 19px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.input__logo {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.input__logo::before {
+    content: url(../storage/img/home/header/search.png);
+    position: absolute;
+    padding-left: 16px;
+    padding-top: 8px;
+    transform: scale(1.2);
+}
+
+.form__busqueda input[type="text"] {
+    box-sizing: content-box;
+    flex: 1;
+    width: 100%; 
+    max-width: 550px; 
+    height: 47px; 
+    font-family: "EncodeSans-Regular";
+    font-size: 17px;
+    outline: none;
+    border-radius: 10px;
+    border-color: var(--color-6);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 15px 0 50px; 
+}
+.form__busqueda input[type="text"]::placeholder {
+    color: var(--color-3);
+}
+
+.input__filtro {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.input__filtro::after { 
+    content: url(../storage/img/home/header/menu_icon.png);
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.form__busqueda input[type="submit"] {
+    flex: 1;
+    width: 60px;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background: var(--color-1);
+}
