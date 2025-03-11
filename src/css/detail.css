@@ -1,0 +1,244 @@
+@import url(variables.css);
+
+body {
+    font-family: "EncodeSans-Regular", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.back-icon {
+    top: 15px;
+    left: 15px;
+}
+
+.heart-icon {
+    top: 15px;
+    right: 15px;
+}
+
+.content {
+    padding-left:20px;
+    margin-top: -15px
+}
+
+h1 {
+    font-size: 24px;
+    color: var(--color-1);
+    font-family: "EncodeSans-SemiBold";
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+}
+
+.rating-value {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--color-2);
+}
+
+.reviews {
+    color: blue;
+    font-family: "EncodeSans-Regular";
+    text-decoration: none;
+}
+
+.counter-container {
+    display: flex;
+    position: relative;
+    margin-left: 230px;
+    top: -50px;
+    gap: 10px;
+}
+
+.button {
+    width: 25px;
+    height: 25px;
+    border: 2px solid var(--color-3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color:var(--color-6);
+}
+
+.button:hover {
+    background-color:var(--color-2);
+}
+.number{
+    color: var(--color-2);
+    margin-top: 2px;
+}
+
+.count {
+    width: 30px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid var(--color-3);
+    border-radius: 5px;
+}
+
+.description {
+    color: var(--color-3);
+    font-size: 14px;
+    padding-left: 5px;
+    margin-top: -10px;
+    line-height: 1.5;
+    font-family: "EncodeSans-Regular";
+
+}
+
+.read-more {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+hr {
+    width: 330px;
+    border: 1px solid var(--color-7);
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.Options{
+    display: flex;
+    font-family:"EncodeSans-Bold";
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    gap: 120px;
+}
+.size-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 10px;
+    justify-content: flex-start;
+}
+
+.size-input {
+    display: none; 
+}
+
+.size-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px; 
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid var(--color-2);
+    font-family:"EncodeSans-Regular";
+    font-size: 16px;
+}
+
+.size-input:checked + .size-label {
+    background-color: var(--color-5);
+    color: var(--color-6);
+    border-color: var(--color-5);
+}
+
+.color-container {
+    display: flex;
+    gap: 10px;
+    margin-left: 215px;
+    margin-top: -30px;
+    justify-content: flex-start;
+}
+
+.color-input {
+    display: none;
+}
+
+.color-label {
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.color-gray { background-color:var(--color-3); }
+.color-darkgray { background-color: var(--color-2); }
+.color-black { background-color: var(--color-5); }
+
+.color-input:checked + .color-label {
+    border: 2px solid var(--color-5);
+}
+
+.total-price {
+    display: flex;
+    justify-content: center;
+    padding:0px 0px;
+    position: fixed;
+    top: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.total-price a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 35px;
+    border-radius: 50px;
+    background-color: var(--color-1);
+    color: var(--color-4);
+    font-family: "EncodeSans-Bold";
+    font-size: 18px;
+    text-decoration: none;
+}
+.total-price samp {
+    background-color: var(--color-1);
+    text-decoration: line-through;
+    color: var(--color-3);
+    padding-top: 5px;
+    font-family: "EncodeSans-Regular";
+    font-size: 12px;
+}
