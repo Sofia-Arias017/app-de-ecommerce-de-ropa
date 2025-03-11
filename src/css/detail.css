@@ -181,3 +181,32 @@ hr {
     color: var(--color-6);
     border-color: var(--color-5);
 }
+
+.color-container {
+    display: flex;
+    gap: 10px;
+    margin-left: 215px;
+    margin-top: -30px;
+    margin-bottom: 80px;
+    justify-content: flex-start;
+}
+
+.color-input {
+    display: none;
+}
+
+.color-label {
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.color-gray { background-color:var(--color-3); }
+.color-darkgray { background-color: var(--color-2); }
+.color-black { background-color: var(--color-5); }
+
+.color-input:checked + .color-label {
+    border: 2px solid var(--color-5);
+}
