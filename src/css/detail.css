@@ -135,3 +135,49 @@ h1 {
     color: black;
     text-decoration: none;
 }
+
+hr {
+    width: 330px;
+    border: 1px solid var(--color-7);
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.Options{
+    display: flex;
+    font-family:"EncodeSans-Bold";
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    gap: 120px;
+}
+.size-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 10px;
+    justify-content: flex-start;
+}
+
+.size-input {
+    display: none; 
+}
+
+.size-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px; 
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid var(--color-2);
+    font-family:"EncodeSans-Regular";
+    font-size: 16px;
+}
+
+.size-input:checked + .size-label {
+    background-color: var(--color-5);
+    color: var(--color-6);
+    border-color: var(--color-5);
+}
