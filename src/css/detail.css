@@ -84,10 +84,47 @@ h1 {
     text-decoration: none;
 }
 
+.counter-container {
+    display: flex;
+    position: relative;
+    margin-left: 230px;
+    top: -50px;
+    gap: 10px;
+}
+
+.button {
+    width: 25px;
+    height: 25px;
+    border: 2px solid var(--color-3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color:var(--color-6);
+}
+
+.button:hover {
+    background-color:var(--color-2);
+}
+.number{
+    color: var(--color-2);
+    margin-top: 2px;
+}
+
+.count {
+    width: 30px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid var(--color-3);
+    border-radius: 5px;
+}
+
 .description {
     color: var(--color-3);
     font-size: 14px;
     padding-left: 5px;
+    margin-top: -10px;
     line-height: 1.5;
     font-family: "EncodeSans-Regular";
 
