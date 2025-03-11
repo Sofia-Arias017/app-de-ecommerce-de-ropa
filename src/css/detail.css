@@ -4,23 +4,21 @@ body {
     font-family: "EncodeSans-Regular", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--color-4);
 }
 
 .container {
     width: 90%;
     max-width: 400px;
     margin: auto;
-    background: var(--color-6);
     padding: 20px;
+    padding-top: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .image-container {
     position: relative;
     width: 100%;
-    max-height: 300px;
+    max-height: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,4 +48,53 @@ body {
 .heart-icon {
     top: 15px;
     right: 15px;
+}
+
+.content {
+    padding-left:20px;
+    margin-top: -15px
+}
+
+h1 {
+    font-size: 24px;
+    color: var(--color-1);
+    font-family: "EncodeSans-SemiBold";
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+}
+
+.rating-value {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--color-2);
+}
+
+.reviews {
+    color: blue;
+    font-family: "EncodeSans-Regular";
+    text-decoration: none;
+}
+
+.description {
+    color: var(--color-3);
+    font-size: 14px;
+    padding-left: 5px;
+    line-height: 1.5;
+    font-family: "EncodeSans-Regular";
+
+}
+
+.read-more {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
 }
