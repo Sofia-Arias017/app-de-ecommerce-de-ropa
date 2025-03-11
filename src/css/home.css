@@ -259,6 +259,13 @@ main {
 }
 
 /* Estilos específicos para algunos artículos */
+.article__contenedora:nth-child(1) {
+    height: 240px;
+    background-image: url(../storage/img/home/shop/model1.png);
+    background-repeat: no-repeat;
+    background-size: 160px 166px;
+    width: 50%;
+}
 .article__contenedora:nth-child(2) {
     height: 280px;
     width: 50%;
